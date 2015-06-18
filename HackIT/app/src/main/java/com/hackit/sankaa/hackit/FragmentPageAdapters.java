@@ -25,9 +25,9 @@ public class FragmentPageAdapters extends FragmentPagerAdapter{
             return (new FragmentHome());
         }else if(i==1){
 
-            return (new FragmentCalendar());
+            return (new FragmentEvent());
         }else if (i==2){
-            return  new FragmentNotification();
+            return  new FragmentGroup();
         }
         return null;
     }
