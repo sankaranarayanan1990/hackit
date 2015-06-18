@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:autoText="false"
+        android:background="@android:color/background_light"
+        android:textStyle="bold"
+        android:id="@+id/eventDate"
+        android:layout_margin="@dimen/abc_button_padding_vertical_material"
+        android:layout_marginLeft="@dimen/abc_action_bar_overflow_padding_start_material"
+        android:layout_marginTop="@dimen/abc_action_bar_default_padding_material"
+        android:layout_marginRight="@dimen/abc_alert_dialog_button_bar_height"
+        android:layout_marginBottom="@dimen/abc_button_inset_horizontal_material"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:theme="@style/AppTheme"
+        android:typeface="sans"
+        android:textSize="40sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:autoText="false"
+        android:background="@android:color/background_light"
+        android:textStyle="bold"
+        android:id="@+id/eventRow"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+        android:autoText="false"
+        android:background="@android:color/background_light"
+        android:textStyle="bold"
+        android:id="@+id/eventPlace"
+        />
+    </LinearLayout>
+
+</LinearLayout>
