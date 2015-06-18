@@ -16,7 +16,7 @@ import org.w3c.dom.Text;
  * Created by sankaa on 6/18/2015.
  */
 public class EventRowAdapter extends ArrayAdapter<String>  {
-    public EventRowAdapter(Context context,String[] values){
+    public EventRowAdapter(Context context, String[] values){
         super(context,R.layout.eventrowlayout,values);
 
     }

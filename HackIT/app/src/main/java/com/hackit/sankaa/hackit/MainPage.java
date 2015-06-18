@@ -16,6 +16,7 @@ import android.widget.ActionMenuView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Gallery;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -28,19 +29,22 @@ import java.util.Arrays;
 public class MainPage extends FragmentActivity {
     private ListView drawerList;
     private ArrayAdapter<String> listAdapter;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
-
+        //Navigation Drawer
         drawerList = (ListView) findViewById(R.id.drawer_list);
-
         String[] Ditems = new String[]{"xyz@cisco.com","Settings","About","Contact"};
         ArrayList<String> drawerItems = new ArrayList<String>();
         drawerItems.addAll(Arrays.asList(Ditems));
         listAdapter = new ArrayAdapter<String>(this,R.layout.simplerow,drawerItems);
         drawerList.setAdapter(listAdapter);
+
+
+
         //Setting view Pager and Sliding Layout
         ViewPager viewPager=(ViewPager)findViewById(R.id.viewPager);
         viewPager.setAdapter(new FragmentPageAdapters(getSupportFragmentManager(), MainPage.this));

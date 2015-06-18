@@ -2,18 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@color/bright_foreground_inverse_material_light">
     <!-- Groups -->
-
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/gridview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnWidth="90dp"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="10dp"
-        android:horizontalSpacing="10dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+     <TextView
+         android:padding="5dp"
+         android:layout_width="290dp"
+         android:layout_height="30dp"
+         android:text="Following"
+         android:layout_margin="5dp"
+         android:textColor="#064476"
+         android:textStyle="bold"
+         android:layout_gravity="center"
+         />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="More >"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textColor="#064476"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridFollow"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:columnWidth="100dp"
+        android:numColumns="2"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="5dp"
         android:stretchMode="columnWidth"
         android:gravity="center"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:text="All Groups"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="#064476"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="More >"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="#064476"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridAll"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:columnWidth="100dp"
+        android:numColumns="2"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
 </LinearLayout>

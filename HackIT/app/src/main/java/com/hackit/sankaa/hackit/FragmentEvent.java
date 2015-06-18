@@ -1,19 +1,12 @@
 package com.hackit.sankaa.hackit;
 
-import android.opengl.EGLExt;
-import android.provider.CalendarContract;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.CalendarView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * Created by sankaa on 6/16/2015.
